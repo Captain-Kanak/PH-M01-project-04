@@ -10,6 +10,11 @@
   font-family: "Azeret Mono", serif;
 }
 
+/* Color Picking */
+:root {
+  --dark: #0d1321;
+}
+
 /* Header Styles */
 #header {
   margin: 0 auto;
@@ -80,4 +85,252 @@
   margin-top: 32px;
 }
 
-/* Header Styles */
+/* why-web-dev section Styles */
+#why-web-dev {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 70px;
+  text-align: center;
+  background-color: rgba(13, 19, 33, 0.02);
+  padding: 50px 95px;
+}
+#why-web-dev h2 {
+  color: #0d1321;
+  font-size: 32px;
+  font-weight: 800;
+}
+#why-web-dev > p {
+  color: #0d1321;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 38px;
+}
+#why-web-dev .card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 32px;
+  border-radius: 16px;
+  padding: 48px;
+}
+#why-web-dev .card .card-content {
+  text-align: start;
+  padding-right: 160px;
+}
+#why-web-dev .card .card-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #0d1321;
+  opacity: 70%;
+}
+#why-web-dev .card .card-content p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #0d1321;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+#why-web-dev .card .card-content button {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0d1321b3;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  border: 1px solid #0d1321b3;
+}
+
+/* inspiration Styles */
+#inspiration {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+.inspiration-tittle {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0d1321;
+}
+.inspiration-sub-tittle {
+  padding: 0 160px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.inspiration-video {
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid #0d1321b3;
+}
+.inspiration-video iframe {
+  border-radius: 16px;
+  height: 550px;
+}
+
+/* target Styles */
+#current-target {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 90px;
+}
+#current-target .tittle {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0d1321;
+}
+#current-target .sub-tittle {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 160px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+#current-target .card-wrapper {
+  display: flex;
+  gap: 24px;
+}
+#current-target .card-wrapper .card {
+  border-radius: 16px;
+  text-align: start;
+  padding: 40px;
+}
+#current-target .card-wrapper .card-1 {
+  background-color: rgba(255, 76, 30, 0.05);
+}
+#current-target .card-wrapper .card-2 {
+  background-color: rgba(0, 76, 232, 0.05);
+}
+#current-target .card-wrapper .card-3 {
+  background-color: rgba(255, 223, 0, 0.05);
+}
+#current-target .card-wrapper .card h3 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 36px;
+  color: #0d1321;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+#current-target .card-wrapper .card p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #0d1321;
+  margin-bottom: 24px;
+}
+#current-target .card-wrapper .card a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0d1321;
+}
+
+/* next-target Styles */
+#next-target .card {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #bcbcbc;
+  margin-bottom: 24px;
+  border-radius: 16px;
+}
+#next-target .card .card-content {
+  width: 85%;
+  text-align: start;
+  padding-right: 50px;
+}
+
+/* support Styles */
+#support {
+  max-width: 1140px;
+  position: relative;
+  height: 313px;
+  margin: 0 auto;
+  border-radius: 16px;
+  margin-top: 70px;
+  text-align: center;
+  color: #ffffff;
+  padding: 64px 228px;
+}
+#support {
+  height: 313px;
+  /* height: 920px; */
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(50, 50, 50, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: 1140px 313px;
+  background-position: center;
+}
+#support::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/handshake.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#support h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+}
+#support p {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 50px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  opacity: 70%;
+}
+#support form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+#support form .text {
+  width: 70%;
+  font-size: 16px;
+  color: #0d1321;
+  padding: 20px;
+  border-radius: 8px;
+}
+#support form .btn {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0d1321;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* footer Styles */
+footer {
+  margin-top: 80px;
+  background-color: #0d13210a;
+}
+#footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+#footer-container .social img {
+  margin-left: 10px;
+  cursor: pointer;
+}
