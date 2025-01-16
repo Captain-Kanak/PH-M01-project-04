@@ -1,0 +1,83 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("./common.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Azeret Mono", serif;
+}
+
+/* Header Styles */
+#header {
+  margin: 0 auto;
+}
+#header nav {
+  margin: 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header nav h1 {
+  font-size: 28px;
+  font-weight: 800;
+}
+#header nav button {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #ffffff;
+  padding: 17px 24px;
+  border-radius: 8px;
+}
+
+/* Hero Section Styles */
+#hero {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 34px 250px;
+  text-align: center;
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/Hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#hero img {
+  width: 240px;
+  height: 240px;
+}
+#hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 68px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+#hero p {
+  font-size: 16px;
+  line-height: 26px;
+}
+#hero button {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #0d1321;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-top: 32px;
+}
+
+/* Header Styles */
